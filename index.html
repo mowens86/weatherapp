@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Your Daily Weather App</title>
+</head>
+<body>
+    <div class="cloud">
+        <section class="outer-container">
+            <section class="grid-container">
+                <header class="header">
+                    <img src="img/logo.png" alt="logo" class="header-logo grid-center">
+                </header>
+                <form class="search">
+                    <input id="zip" type="text" class="search-field grid-center" placeholder="Type your zipcode..." maxlength="5"></input>
+                    <button type="submit" onclick="weatherCall()" class="btn search-button">Check the Weather</button>
+                </form>
+                
+                <div class="grid-image grid-center">
+                    <div class="today">
+                        <img id="weatherstatus" src="img/sunny.png" alt="Sunny">
+                    </div>
+                </div>
+                <div class="grid-text">
+                    <div class="day-two">
+                        <h1 id="temp"></h1>
+                        <h2 id="name"></h2>
+                        <h4 id="description"></h4>
+                        <p id="humidity">Humidity: </p>
+                        <p id="wind">Wind: </p>
+                    </div>
+                </div>               
+            </section>
+        </section>
+    </div>     
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
